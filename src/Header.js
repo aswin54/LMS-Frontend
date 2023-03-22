@@ -17,11 +17,25 @@ function Header() {
             <li className="nav-item">
             <a className="nav-link" href="#">Courses</a>
             </li>
-            <li className="nav-item">
-            <a className="nav-link">Teachers</a>
+            <li className="nav-item dropdown">
+            <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Teachers
+            </Link>
+            <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" to="/teacher-login">Login</Link></li>
+                <li><Link className="dropdown-item" to="/teacher-register">Register</Link></li>
+                <li><Link className="dropdown-item" to="/teacher-dashboard">Dashboard</Link></li>
+            </ul>
             </li>
-            <li className="nav-item">
-            <NavLink className="nav-link" to='/about'>About Us</NavLink>
+            <li class="nav-item dropdown">
+              <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                User
+              </Link>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" to="/user-login">Login</Link></li>
+                <li><Link className="dropdown-item" to="/user-register">Register</Link></li>
+                <li><Link className="dropdown-item" to="/dashboard">Dashboard</Link></li>
+              </ul>
             </li>
         </ul>
         </div>

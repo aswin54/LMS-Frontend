@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 function CourseDetail() {
     let {course_id} = useParams()
@@ -20,12 +20,27 @@ function CourseDetail() {
         </div>
         {/* course videos */}
         <div className='card mt-4'>
-            <div className='card-header'>Course Videos</div>
+            <h5 className='card-header'>Course Videos</h5>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">Introduction<button className='btn btn-sm btn-secondary' style={{float:"right"}}>Play</button></li>
-                <li class="list-group-item">Setup Project</li>
-                <li class="list-group-item">Start with functional component</li>
+                <li class="list-group-item">Introduction<button className='btn btn-sm btn-danger float-end' style={{float:"right"}}>
+                    <i className='bi-youtube'></i></button></li>
+                <li class="list-group-item">Introduction<button className='btn btn-sm btn-danger float-end' style={{float:"right"}}>
+                    <i className='bi-youtube'></i></button></li>
+                <li class="list-group-item">Introduction<button className='btn btn-sm btn-danger float-end' style={{float:"right"}}>
+                    <i className='bi-youtube'></i></button></li>
             </ul>
+        </div>
+        {/* end of course videos */}
+        <h3 className='pb-1 mb-4 mt-5'>Related Courses</h3>
+        <div className='row'>
+            <div className='col-md-3'>
+                <div className="card">
+                    <img src="..." className="card-img-top" alt="..."/>
+                    <div className="card-body">
+                        <h5 className="card-title"><Link to='/detail/1'>Card title</Link></h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   )
