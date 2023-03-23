@@ -22,6 +22,11 @@ import Mycoursesteacher from './Teacher/Mycoursesteacher';
 import Myusers from './Teacher/Myusers';
 import Profilesettingteacher from './Teacher/Profilesettingteacher';
 import Changepasswordteacher from './Teacher/Changepasswordteacher';
+import Teacherdetail from './Teacherdetail';
+import Allcourses from './Allcourses';
+import Popularcourses from './Popularcourses';
+import Popularteachers from './Popularteachers';
+import Categorycourses from './Categorycourses';
 
 function App() {
   return (
@@ -32,6 +37,11 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />}/>
         <Route path='/detail/:course_id' element={<CourseDetail />}/>
+        <Route path='/teacherdetail/:teacher_id' element={<Teacherdetail/>}/>
+        <Route path='/allcourses' element={<Allcourses />}/>
+        <Route path='/popularcourses' element={<Popularcourses />}/>
+        <Route path='/popularteachers' element={<Popularteachers />}/>
+        <Route path='/category/:categoty_slug' element={<Categorycourses />}/>
 
         <Route path='/user-login' element={<Login />}/>
         <Route path='/user-register' element={<Register />}/>

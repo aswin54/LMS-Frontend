@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 function Home() {
   return (
   <div className='container mt-4'>
     {/* Latest Courses */}
-    <h3 className='pb-1 mb-4'>Latest Courses<a href='#' className='float-end'>see all</a></h3>
+    <h3 className='pb-1 mb-4'>Latest Courses<Link to='/allcourses' className='float-end'>see all</Link></h3>
     <div className='row'>
         <div className='col-md-3'>
             <div className="card">
@@ -13,31 +14,43 @@ function Home() {
                 <div className="card-body">
                     <h5 className="card-title"><Link to='/detail/1'>Card title</Link></h5>
                 </div>
+                <div className='card-footer'>
+                    <div className='title'>
+                        <span>Rating:4.5/5</span>
+                        <span className='float-end'>views: 78</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     {/* end of latest Courses */}
     {/* Popular Courses */}
-    <h3 className='pb-1 mb-4 mt-5'>Popular Courses<a href='#' className='float-end'>see all</a></h3>
+    <h3 className='pb-1 mb-4 mt-5'>Popular Courses<Link to='/popularcourses' className='float-end'>see all</Link></h3>
     <div className='row'>
         <div className='col-md-3'>
             <div className="card">
                 <img src="..." className="card-img-top" alt="..."/>
                 <div className="card-body">
-                    <h5 className="card-title"><a href='#'>Card title</a></h5>
+                    <h5 className="card-title"><Link href='#'>Card title</Link></h5>
+                </div>
+                <div className='card-footer'>
+                    <div className='title'>
+                        <span>Rating:4.5/5</span>
+                        <span className='float-end'>views: 78</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     {/* end of Popular Courses */}
     {/* Popular Teachers */}
-    <h3 className='pb-1 mb-4 mt-5'>Featured Teachers<a href='#' className='float-end'>see all</a></h3>
+    <h3 className='pb-1 mb-4 mt-5'>Featured Teachers<Link to='/popularteachers' className='float-end'>see all</Link></h3>
     <div className='row'>
         <div className='col-md-3'>
             <div className="card">
                 <img src="..." className="card-img-top" alt="..."/>
                 <div className="card-body">
-                    <h5 className="card-title"><a href='#'>Card title</a></h5>
+                    <h5 className="card-title"><Link to='#'>Card title</Link></h5>
                 </div>
             </div>
         </div>

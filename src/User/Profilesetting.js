@@ -6,7 +6,8 @@ function Profilesetting() {
         <div className='container mt-4'>
             <div className='row'>
                 <aside className='col-md-3'>
-                    <Sidebar />
+                    <Sidebar
+                     />
                 </aside>
                 <section className='col-md-9'>
                     <div className='card'>
