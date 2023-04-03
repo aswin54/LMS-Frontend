@@ -19,7 +19,8 @@ function Registerteacher() {
         })
     }
 
-    const submitForm = ()=>{
+    const submitForm = (e)=>{
+        e.preventDefault()
         const teacherFormData = new FormData();
         teacherFormData.append('full_name',teacherData.full_name)
         teacherFormData.append('email',teacherData.email)
