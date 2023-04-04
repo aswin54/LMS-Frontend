@@ -51,8 +51,8 @@ function Registerteacher() {
       }, [])
   return (
     <div className='container mt-5'>
-        {teacherData.status=='success' && <p className='text-success'>Thanks for registering</p>}
-        {teacherData.status=='error' && <p className='text-danger'>something went wrong</p>}
+        {teacherData.status==='success' && <p className='text-success'>Thanks for registering</p>}
+        {teacherData.status==='error' && <p className='text-danger'>something went wrong</p>}
         <div className='card'>
             <h5 className='card-header text-center'>Teacher Register Form</h5>
             <div className='card-body'>

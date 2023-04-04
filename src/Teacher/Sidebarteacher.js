@@ -11,7 +11,7 @@ function Sidebarteacher() {
                 <Link to='/teacher-users' className='list-group-item list-group-item-action'>My Users</Link>
                 <Link to='/teacher-profile' className='list-group-item list-group-item-action'>Profile Setting</Link>
                 <Link to='/resetpassword' className='list-group-item list-group-item-action'>Change Password</Link>
-                <Link to='/' className='list-group-item list-group-item-action text-danger'>Logout</Link>
+                <Link to='/teacher-logout' className='list-group-item list-group-item-action text-danger'>Logout</Link>
             </div>
     </div>
   )

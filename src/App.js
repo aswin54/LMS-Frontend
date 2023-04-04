@@ -27,6 +27,7 @@ import Allcourses from './Allcourses';
 import Popularcourses from './Popularcourses';
 import Popularteachers from './Popularteachers';
 import Categorycourses from './Categorycourses';
+import TeacherLogout from './Teacher/TeacherLogout';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
         <Route path='/changepassword' element={<Changepassword />}/>
 
         <Route path='/teacher-login' element={<Loginteacher />}/>
+        <Route path='/teacher-logout' element={<TeacherLogout />}/>
         <Route path='/teacher-register' element={<Registerteacher />}/>
         <Route path='/teacher-dashboard' element={<Dashboardteacher />}/>
         <Route path='/teacher-courses' element={<Mycoursesteacher />}/>
